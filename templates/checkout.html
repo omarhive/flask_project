@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Shipping & Payment</h2>
+<form method="post" action="{{ url_for('checkout') }}">
+  <div class="mb-3">
+    <label for="name" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label for="address" class="form-label">Shipping Address</label>
+    <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+  </div>
+  <!--<button class="btn btn-success" type="submit">Place Order</button>-->
+</form>
+ <b>For Business enquiries call: +91 99401 19150</b> 
+{% endblock %}
